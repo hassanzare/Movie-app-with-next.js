@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Results from "@/components/Results";
 import Head from "next/head";
-import { Result } from "postcss";
 
 export default function Home() {
   return (
