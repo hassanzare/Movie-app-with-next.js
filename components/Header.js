@@ -1,11 +1,29 @@
 import React from "react";
+import Image from "next/image";
+import HeaderIcon from "./HeaderIcon";
+import {
+  UserIcon,
+  HomeIcon,
+  PhoneIcon,
+  InformationCircleIcon,
+} from "@heroicons/react/24/solid";
 
 export default function () {
   return (
     <div>
-      <div>
-        <h1>Header</h1>
+      <div className="">
+        <HeaderIcon Icon={HomeIcon} title="HOME" />
+        <HeaderIcon Icon={UserIcon} title="ACCOUNT" />
+        <HeaderIcon Icon={PhoneIcon} title="CONTACT" />
+        <HeaderIcon Icon={InformationCircleIcon} title="ABOUT" />
       </div>
+      <Image
+        src={
+          "https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+        }
+        width={100}
+        height={100}
+      />
     </div>
   );
 }
